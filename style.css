@@ -18,11 +18,18 @@
 html, body{
   height: 100%;
 }
-
+body{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 span{
   color: var(--color-logo);
 }
 
 body{
     background-color: var(--body-background);
+}
+
+div{
+  border: 1px solid red;
 }

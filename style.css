@@ -19,17 +19,18 @@ html, body{
   height: 100%;
 }
 body{
-  max-width: 1200px;
   margin: 0 auto;
+  background-color: var(--body-background);
+
 }
 span{
   color: var(--color-logo);
 }
 
-body{
-    background-color: var(--body-background);
-}
-
-div{
-  border: 1px solid red;
+section.front-cover{
+  background-image: url(/assets/background.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  background-attachment: fixed;
 }

@@ -16,6 +16,7 @@
   box-sizing: border-box;
   color: var(--text-color);
   font-family: 'Montserrat', sans-serif;
+  list-style: none;
 }
 
 a{
@@ -305,5 +306,124 @@ div.group{
   justify-content: center;
   font-size: 18px;
   font-weight: normal;
+}
+
+/*footer*/
+
+
+footer{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-color);
+}
+
+div.footer-top{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.footer-top h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.footer-top button{
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-logo);
+  border: 0.1px solid var(--card-color);
+}
+.footer-main{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #5a5757;
+  border-top: 1px solid #5a5757; 
 
 }
+
+div.input-email{
+  width: 35%;
+  padding: 30px 2px;
+  align-items: center;
+}
+form{
+  display: flex;
+  width: 85%;
+  margin: 20px 0;
+  flex-wrap: nowrap;
+}
+
+.input-email h3{
+  font-size: 20px;
+  font-weight: normal;
+}
+.input-email input[type=email]{
+  width: 80%;
+  height: 40px;
+  background-color: #000;
+  color: #5a5757;
+  outline: none;
+  border: none;
+  padding: 0 5px;
+} 
+.input-email input[placeholder]{
+  font-size: 16px;
+}
+.input-email input[type=submit]{
+  width: 20%;
+  height: 40px;  
+  cursor: pointer;
+}
+.input-email input[value]{
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+div.line-footer{
+  width: 1px;  
+  max-width: 1px;
+  background-color: #5a5757;
+}
+
+div.links{
+  display: flex;
+  width: 65%;
+  justify-content: space-around;
+  align-items: center;
+}
+.links ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.links li{
+  font-size: 16px;
+  font-weight: bold;
+}
+.links a{
+  color: var(--subtitle-color);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.footer-bottom{
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 20px;
+  align-items: center;
+}
+
+.footer-bottom ul{
+  display: flex;
+  gap: 20px;
+
+}
+
+

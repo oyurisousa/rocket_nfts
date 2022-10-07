@@ -310,20 +310,26 @@ div.group{
 
 /*footer*/
 
-
+footer *{
+  border: 1px solid red;
+}
 footer{
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   background-color: var(--card-color);
 }
-
+.footer-agroup{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 div.footer-top{
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
+  align-items: center;
 }
 
 .footer-top h2{
@@ -336,6 +342,10 @@ div.footer-top{
   height: 50px;
   background-color: var(--color-logo);
   border: 0.1px solid var(--card-color);
+  cursor: pointer;
+}
+.footer-top button:focus{
+  transition: 2s;
 }
 .footer-main{
   display: flex;
@@ -412,11 +422,10 @@ div.links{
 }
 
 .footer-bottom{
-  margin: 0 auto;
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
-  margin: 20px;
+  margin: 20px 0;
   align-items: center;
 }
 

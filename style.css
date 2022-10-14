@@ -53,6 +53,9 @@ section.front-cover{
 }
 
 /*Header*/
+header *{
+  border: 1px solid red;
+}
 header{
   width: 100%;
   display: flex;
@@ -426,17 +429,58 @@ div.links{
   display: flex;
   gap: 20px;
 }
-#menuClick{
+svg{
   display: none;
+  
 }
+
+
+
 /*medias queries*/
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 400px){
+ 
+  header *{
+    border: 1px solid red;
+  }
   header{
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px 2%;
+    gap: 15px;
+  }
+  .burguer-title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .burguer-title #burguer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-logo);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+  }
+  #burguer svg{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
   }
   header nav{
     display: none;    
   }
+  main.content1 *{
+    border: 1px solid red;
+  }
+  main.content1{
+    display: flex;
+    flex-direction: column;
+  }  
+
 }

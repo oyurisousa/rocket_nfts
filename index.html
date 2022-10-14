@@ -14,14 +14,12 @@
         <div class="bg-image">
             <section class="front-cover">
                 <header id="header">
-                    <div class="burguer-title">
-                        <h1>Rocket <span>NFTs</span></h1>
-                        <div id="menuClick" onclick="clickMenu()" ></div>
-                    </div>
-                    
-                    <div id="burguer" onclick="clickMenu()" style="background-color: #ff5b50;">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 15h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg>
-                    </div>
+                        <div class="burguer-title">
+                            <h1>Rocket <span>NFTs</span></h1>                      
+                            <div id="burguer" onclick="clickMenu()" style="display: block;">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24"  width="30px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 15h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg>
+                            </div>
+                        </div>
                     <nav id="itens">
                         
                         <a href="">Comprar NFT</a>
@@ -368,11 +366,12 @@
 
 
         <script>
+
             function clickMenu(){
-                if(itens.style.display == 'block'){
+                if(itens.style.display == 'flex'){
                     itens.style.display = 'none'; 
                 }else{
-                    itens.style.display = 'block';
+                    itens.style.display = 'flex';
                 }
             }
         </script>

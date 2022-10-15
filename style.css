@@ -53,9 +53,7 @@ section.front-cover{
 }
 
 /*Header*/
-header *{
-  border: 1px solid red;
-}
+
 header{
   width: 100%;
   display: flex;
@@ -429,7 +427,7 @@ div.links{
   display: flex;
   gap: 20px;
 }
-svg{
+#burguer svg{
   display: none;
   
 }
@@ -440,11 +438,16 @@ svg{
 
 @media screen and (max-width: 400px){
  
-  header *{
-    border: 1px solid red;
+  section.front-cover{
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    margin: 0 auto;
+    height: auto;
   }
+
+  
   header{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -475,12 +478,49 @@ svg{
   header nav{
     display: none;    
   }
-  main.content1 *{
-    border: 1px solid red;
-  }
+  
   main.content1{
     display: flex;
     flex-direction: column;
-  }  
+    gap: 15px;
+  } 
+  .text-image-artists{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2%;
+    justify-content: center;
+    gap: 10px;
+    
+  } 
+  .selected-artists{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  .content1 h2{
+    width: 100%;
+    padding: 0 2%;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  .gallery1, .gallery2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2%;
+    gap: 10px;
+  }
+  .gallery img{
+    width: 90%;
+    margin: 0 auto;
+  }
 
 }

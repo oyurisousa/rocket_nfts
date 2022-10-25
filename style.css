@@ -153,7 +153,7 @@ div.numbers{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border-right: 1px solid #5a5757;
+  border-right: 1px solid #5a5757;  
 }
 .numbers p{
   display: flex;
@@ -504,7 +504,9 @@ div.links{
     text-align: center;
     font-size: 30px;
   }
-  
+  .gallery *{
+    border: 1px solid rgb(236, 118, 0);
+  }
   .gallery{
     display: flex;
     flex-direction: column;
@@ -513,14 +515,64 @@ div.links{
   }
   .gallery1, .gallery2{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+    flex-wrap: wrap;
     padding: 0 2%;
-    gap: 10px;
   }
   .gallery img{
-    width: 90%;
-    margin: 0 auto;
+    width: 49%;
+    margin: 10px 0;
   }
+
+  /*MAIN2*/
+
+  section.main2 *{
+    border: 1px solid red;
+  }
+  section.main2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  div.numbers{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 2%;
+    border: none;
+  }
+  div.line-numbers{
+    width: 1px;
+    max-width: 1px;
+    height: 100%;
+    background-color: var(--card-color);
+  }
+  .numbers p{
+    scale: 0.7;
+  }
+  div.text-banner{
+    width: 100%;
+  }
+  div.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+  }
+  div.banner{
+    width: 100%;
+    height: 100px;
+    padding: 0 2%;
+    background-image: url('./assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section.main3{
+    display: block;
+  }
+
 
 }

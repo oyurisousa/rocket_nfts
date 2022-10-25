@@ -504,9 +504,7 @@ div.links{
     text-align: center;
     font-size: 30px;
   }
-  .gallery *{
-    border: 1px solid rgb(236, 118, 0);
-  }
+ 
   .gallery{
     display: flex;
     flex-direction: column;
@@ -527,15 +525,14 @@ div.links{
 
   /*MAIN2*/
 
-  section.main2 *{
-    border: 1px solid red;
-  }
+
   section.main2{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
-    max-height: 100%;
+    max-height: 1000px;
+    border-bottom: none;
   }
   div.numbers{
     display: flex;
@@ -573,6 +570,65 @@ div.links{
   section.main3{
     display: block;
   }
+
+  /*MAIN3*/
+
+
+  .main3{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+
+  .main3 h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  .main3 .content-astronauts{
+    display: flex;
+    padding: 0 2%;
+    flex-direction: column;
+    max-width: 400px;
+  }
+  .astronaut_1, .astronaut_2, .astronaut_3, .astronaut_4{
+    border-top: 1px solid var(--subtitle-color);
+    width: 100%;
+  }
+
+  /*MAIN4*/
+  
+  section.main4{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+    
+  }
+  .main4 h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+    
+  }
+  div.artists_1, div.artists_2{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column;
+    margin: 20px 0;
+    gap: 15px; 
+  }
+  div.artist_1, div.artist_2, div.artist_3, div.artist_4, div.artist_5, div.artist_6{
+    width: 90%;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    margin: 0 auto;
+    
+    
+  }
+
 
 
 }

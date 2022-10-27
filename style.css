@@ -337,6 +337,7 @@ div.footer-top{
   background-color: var(--color-logo);
   border: 0.1px solid var(--card-color);
   cursor: pointer;
+  border-radius: 10%;
 }
 .footer-top button:focus{
   transition: 2s;
@@ -545,7 +546,7 @@ div.links{
   div.line-numbers{
     width: 1px;
     max-width: 1px;
-    height: 100%;
+    height: 50px;
     background-color: var(--card-color);
   }
   .numbers p{
@@ -593,7 +594,7 @@ div.links{
     max-width: 400px;
   }
   .astronaut_1, .astronaut_2, .astronaut_3, .astronaut_4{
-    border-top: 1px solid var(--subtitle-color);
+    
     width: 100%;
   }
 
@@ -625,10 +626,78 @@ div.links{
     display: flex;
     justify-content:center;
     margin: 0 auto;
-    
-    
+  }
+  /*FOOTER*/
+  
+  .footer-agroup{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
+  }  
+  div.footer-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 15px;
+    gap: 100px;
   }
 
+  div.footer-top h2{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .footer-top button{
+    width: 40px;
+    height: 40px;    
+  }
+  .button-svg-scroll{
+    width: 15px;
+    height: 15px;
+  }
 
+  .footer-main{
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+        
+  }
+  div.input-email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 2px;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    border-bottom: 1px solid var(--subtitle-color);
 
+  }
+  form{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    
+  }
+  div.line-footer{
+    display: none;
+  }
+  div.links{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .footer-bottom{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6px;
+    margin: 0 auto;
+  }
+  svg.social-icons{
+    width: 25px;
+    height: 25px;
+  }
 }

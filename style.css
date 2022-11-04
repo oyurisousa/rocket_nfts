@@ -455,6 +455,7 @@ div.links{
     margin-bottom: 20px;
     padding: 10px 2%;
     gap: 15px;
+    animation: fromTop .3s 0.2s backwards;
   }
   .burguer-title{
     display: flex;
@@ -469,12 +470,17 @@ div.links{
     width: 40px;
     height: 40px;
     text-align: center;
+    border-radius: 2px;
+  }
+  .burguer-title #burguer:focus{
+    background-color: #d4392ef0;
   }
   #burguer svg{
     display: flex;
     margin: 0 auto;
     width: 90%;
     height: 100%;
+    
   }
   header nav{
     display: none;    
@@ -492,12 +498,22 @@ div.links{
     padding: 0 2%;
     justify-content: center;
     gap: 10px;
-    
+    animation: fromTop .7s 0.2s backwards;
+  }
+  .text-image-artists h4{
+    animation: fromTop .5s 0.2s backwards;
+  }
+  .content1 h2{
+    animation: fromTop .9s 0.2s backwards;
   } 
+  .art-explorer{
+    animation: fromTop 1s 0.2s backwards;
+  }
   .selected-artists{
     display: flex;
     justify-content: center;
     gap: 12px;
+    
   }
   .content1 h2{
     width: 100%;
@@ -511,6 +527,7 @@ div.links{
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    margin-top: -50px;
   }
   .gallery1, .gallery2{
     display: flex;
@@ -604,6 +621,7 @@ div.links{
     display: flex;
     flex-direction: column;
     padding: 0 2%;
+    gap: 0;
     
   }
   .main4 h3{
@@ -620,12 +638,16 @@ div.links{
     margin: 20px 0;
     gap: 15px; 
   }
+  
   div.artist_1, div.artist_2, div.artist_3, div.artist_4, div.artist_5, div.artist_6{
     width: 90%;
     padding: 0;
     display: flex;
     justify-content:center;
     margin: 0 auto;
+  }
+  .biro{
+    margin-bottom: 0;
   }
   /*FOOTER*/
   
@@ -701,3 +723,15 @@ div.links{
     height: 25px;
   }
 }
+
+@keyframes fromTop{
+  from{
+    opacity: 0;
+    transform: translate(-30px);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+

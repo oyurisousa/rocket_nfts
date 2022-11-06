@@ -1,15 +1,3 @@
-<?php 
-    $pdo = new PDO('mysql:host=localhost;dbname=rocket_NFT','root','');
-    
-    
-    if(isset($_POST['acao'])){
-
-        $email = $_POST['email'];
-        $sql = $pdo->prepare("INSERT INTO `Inscritos-` VALUES (null,?)");
-        $sql->execute(array($email));
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>

@@ -1,11 +1,11 @@
 # Rocket NFTs
-> Desafio Roxketseat
+> Desafio Rocketseat
 
 ![preview](./assets/rocket.png)
 [Acesse aqui!](https://yuri2544.github.io/rocket_nfts/)
 
 
-*Projeto construído no desafio explorer da Rocketseat.
+*Projeto construído no desafio da Rocketseat.
 
 ## Tecnologias
 

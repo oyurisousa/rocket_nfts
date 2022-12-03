@@ -2,7 +2,7 @@
 > Desafio Rocketseat
 
 ![preview](./assets/rocket.png)
-[Acesse aqui!](https://yuri2544.github.io/rocket_nfts/)
+[Acesse aqui!](https://oyurisousa.github.io/rocket_nfts/)
 
 
 *Projeto construído no desafio da Rocketseat.
